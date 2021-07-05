@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVS Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css"/>
+    <link rel="stylesheet" href="styles/contact-style.css"/>
+    <script src="scripts/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar area content -->
+    <nav class="navbar">
+        <a href="index.html" class="brand-logo"><img src="images/avlogolight.svg" alt="">
+        </a>
+        <a href="#" class="toggle-button">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects-area">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main area content -->
+    <main class="main-avs">
+        <div class="avs-container">
+            <div>
+                <h2>Send a message to Adrian:</h2>
+            </div>
+        </div>
+        <div class="avs-form">
+            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xqkwlqgo" method="post">
+                <fieldset id="fs-frm-inputs">
+                  <label for="full-name">Full Name</label>
+                  <input class="form-input" type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                  <label for="email-address">Email Address</label>
+                  <input class="form-input" type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                  <label for="message">Message</label>
+                  <textarea class="form-input" rows="5" name="message" id="message" placeholder="Message text..." required=""></textarea>
+                  <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                </fieldset>
+                <input class="submit-btn" type="submit" value="Submit">
+            </form>
+        </div>
+    </main>
+
+
+
+    <!-- Footer area content -->
+    <footer class="footer">
+        <p>&copy; 2021 Adrian van Schalkwyk  | <a href="contact.html" target="_blank">Contact</a></p>
+    </footer>
+
+</body>
+</html>
