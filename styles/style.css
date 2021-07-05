@@ -3,6 +3,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    background: #252336;
+}
+
 .brand-logo {
     width: 100px;
     padding: 10px 0px 10px 10px;
@@ -91,6 +95,10 @@ body {
 .footer a:hover {
     opacity: 0.6;
     transition: 2s ease;
+}
+
+#siteseal img {
+    float: right;
 }
 
 /*For mobile*/

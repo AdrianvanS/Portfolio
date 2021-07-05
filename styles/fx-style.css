@@ -34,10 +34,11 @@ section {
 }
 
 .section-img img {
-    margin: 0;
     padding: 0;
+    margin-bottom: -7px;
     width: 100%;
     height: 100%;
+    border: #474747 solid 1px;
 }
 
 .section-text {
@@ -90,6 +91,7 @@ section {
     }
 
     .section-img img {
+        border: none;
         width: 400px;
         height: 100%;
     }
