@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVS Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css"/>
+    <link rel="stylesheet" href="styles/fx-style.css"/>
+    <script src="scripts/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar area content -->
+    <nav class="navbar">
+        <a href="index.html" class="brand-logo"><img src="images/avlogolight.svg" alt="">
+        </a>
+        <a href="#" class="toggle-button">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects-area">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main area content -->
+    <main>
+        <a href="https://github.com/AdrianvanS/LinuxRatesServer" alt="https://github.com/AdrianvanS/LinuxRatesServer" target="_blank"><h1>FX Rates Application Server</h1></a>
+        <p id="proj-desc">The Foreign Exchange (FX) Rates application server, is a multi-threaded application written in Java, allowing multiple users to access the rates at the same time, on their own thread. 
+        <br><br>
+        It has multiple versions that allow it to run on both Windows and Linux PCs, and there is a bespoke User Interface (UI) coded using the Swing GUI widget toolkit for Java, which provides updates to users.
+        <br><br>
+        The application makes use of SQL and a Web API to query data from a website, store it and retrieve it as requested by users. This makes it much more efficient and would assist with scaling.
+        </p>
+        <section id="section1">
+            <div class="section-img">
+                <img src="images/fxr1.png" alt="OOP image"/>
+            </div>
+            <div class="section-text" id="text-1">
+                <u>OOP</u>
+                <br><br>
+                I made use of the Object-Oriented Programming paradigm through implementation of fundamental building blocks such as classes, objects, methods and attributes.
+                <br><br>
+                By creating FX Rate classes I had a template for storing all the attributes I needed for each, such as the rate itself, the date of it and the currency. Once I had the class I could create as many rate objects as necessary to store the data.
+                <br><br>
+                I created a number of methods to manipulate the data as required throughout the program, For example I had methods to create rate objects and update them to a table.
+            </div>
+        </section>
+
+        <section id="section2">
+            <div class="section-text" id="text-2">
+                <u>Encapsulation</u>
+                <br><br>
+                By hiding the values or state of structured data objects inside classes, I was able to protect them and prevent unauthorized parties’ having direct access to them.
+                <br><br>
+                One example is the Rate class which stores the values of Rate objects once created. I used the “private” keyword to restrict access and then provided “getter” methods to allow retrieval of those values.
+            </div>
+            <div class="section-img">
+                <img src="images/fxr2.png" alt="Encapsulation image"/>
+            </div>
+        </section>
+
+        <section id="section3">
+            <div class="section-img">
+                <img src="images/fxr3.png" alt="Abstraction image"/>
+            </div>
+            <div class="section-text" id="text-3">
+                <u>Abstraction</u>
+                <br><br>
+                In object-oriented design, programs are often extremely large and separate objects communicate with each other a lot. So maintaining a large codebase like this for years, with changes along the way, is difficult.
+                <br><br>
+                Applying abstraction meant that each object only exposed a high-level mechanism for using it. This mechanism hid internal implementation details and only revealed operations relevant for the other objects.
+            </div>
+        </section>
+
+        <section id="section4">
+            <div class="section-text" id="text-4">
+                <u>Inheritance</u>
+                <br><br>
+                In order to reuse common logic and extract the unique logic into a separate class, I used Inheritance. I achieved this through creation of “child” classes, deriving from another “parent” class.
+                <br><br>
+                The “child” class reuses all fields and methods of the parent class (common part) and implements its own unique part (attributes and methods).
+            </div>
+            <div class="section-img">
+                <img src="images/fxr4.png" alt="Inheritance image"/>
+            </div>
+        </section>
+
+        <section id="section5">
+            <div class="section-img">
+                <img src="images/fxr5.png" alt="Polymorphism image"/>
+            </div>
+            <div class="section-text" id="text-5">
+                <u>Polymorphism</u>
+                <br><br>
+                A common way of implementing Polymorphism is through use of interfaces. These give the ability to override a method from a superclass, in the subclass.
+                <br><br>
+                Implementing the Runnable Interface was partly how I was able to create multiple threads in the application. These took care of tasks that otherwise might have caused the Main Thread to freeze.
+            </div>
+        </section>
+
+        <section id="section6">
+            <div class="section-text" id="text-6">
+                <u>Multi-Threading</u>
+                <br><br>
+                Since I created a bespoke User Interface (UI) to advise the user of what was happening with the application, I made use of multi-threading to avoid blockages in the Main Thread. 
+                <br><br>
+                This was also necessary because the application would at times, have to perform searches in the web through an API, or make updates to tables. Without the use of multi-threading, those tasks would have had to run concurrently with the updates to the UI and would have caused it to freeze.
+                <br><br>
+                Additionally, by providing each user query from the client-side with its own thread, multiple users are able to query the application at the same time without it becoming blocked.
+            </div>
+            <div class="section-img">
+                <img src="images/fxr6.png" alt="Multi-Threading image"/>
+            </div>
+        </section>
+
+        <section id="section7">
+            <div class="section-img">
+                <img src="images/fxr7.png" alt="API image"/>
+            </div>
+            <div class="section-text" id="text-7">
+                <u>Web API</u>
+                <br><br>
+                In order to retrieve the FX Rates to populate the tables in the application, I used a Web Application Programming Interface (API).  I imported Unirest libraries and was subsequently able to make use of the “get” method to retrieve a full string of FX Rates from a website, for a given date.
+                <br><br>
+                Once the string is retrieved, it is sent to another class where it’s split into component attributes and used to create Rate objects, that are subsequently populated into a database for storage and retrieval.
+            </div>
+        </section>
+
+        <section id="section8">
+            <div class="section-text" id="text-8">
+                <u>SQL</u>
+                <br><br>
+                I used a SQL database to store the rates data. To access the rates, I created a number of methods which would query the database and look for existing tables of rates data for particular dates. If not found, the application would then use the Web API to retrieve rates for that date and create a new table in the database.
+                <br><br>
+                By using the database instead of relying on the Web API to retrieve all the rates, I was able to massively reduce the number of API calls to retrieve rates, since they would only have to be done once instead of multiple times. This also ensured the application would have rates available even if the website was down.
+            </div>
+            <div class="section-img">
+                <img src="images/fxr8.png" alt="SQL image"/>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer area content -->
+    <footer class="footer">
+        <p>&copy; 2021 Adrian van Schalkwyk  | <a href="contact.html" target="_blank">Contact</a></p>
+    </footer>
+
+</body>
+</html>

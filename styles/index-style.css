@@ -118,6 +118,11 @@ span.fade {
     margin-left: 20px;
 }
 
+.mycv img {
+    margin-left: 20px;
+    height: 50px;
+}
+
 /*Project One section*/
 #pd1 {
     background: #054a52;
