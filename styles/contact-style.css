@@ -9,6 +9,15 @@
     background-image: "images/avlogolight.svg";
 }
 
+body {
+  background: #bfc9ff;
+}
+
+.ct-contain-all {
+  max-width: 1200px;
+  margin: auto;
+}
+
 .avs-container {
 	margin: 0;
     padding: 20px;

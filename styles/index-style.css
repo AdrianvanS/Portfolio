@@ -5,6 +5,15 @@ main {
     height: 45rem;
 }
 
+body {
+    background: #bfc9ff;
+}
+
+.contain-all {
+    max-width: 1200px;
+    margin: auto;
+}
+
 .welcome-container {
     margin: 0;
     display: flex;
@@ -190,7 +199,7 @@ span.fade {
 #pr-img2 {
     border-top: gray solid 1px;
 }
-  
+
 /*For mobile*/
 @media (max-width: 600px) {
     .main {
@@ -203,11 +212,11 @@ span.fade {
     }
 
     #about-txt {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .welcome-msg {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .welcome-container {
@@ -240,7 +249,7 @@ span.fade {
     }
 
     .project-description p {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .footer {

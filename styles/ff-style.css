@@ -5,6 +5,15 @@ main {
     background: #121429;
 }
 
+body {
+    background: #bfc9ff;
+}
+
+.ff-contain-all {
+    max-width: 1200px;
+    margin: auto;
+}
+
 main a {
     text-decoration: none;
 }
@@ -25,7 +34,7 @@ main h1:hover {
     margin: 0;
     padding: 0px 20px 20px;
     color: #fafafa;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 section {
@@ -45,7 +54,7 @@ section {
     margin: 0;
     padding: 20px;
     color: #fafafa;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 #text-1 {
